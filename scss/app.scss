@@ -1,6 +1,12 @@
 @import "settings";
 @import "foundation";
 
+@import
+	"partials/main",
+	"partials/menu",
+	"partials/typography";
+
+	
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -38,3 +44,8 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+
+
+
