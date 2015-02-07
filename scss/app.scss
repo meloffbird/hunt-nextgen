@@ -1,10 +1,26 @@
 @import "settings";
 @import "foundation";
 
+
+// helpers
 @import
-	"partials/main",
-	"partials/menu",
-	"partials/typography";
+"../scss/helpers/mixins",
+"../scss/helpers/variables";
+
+// vendor
+
+
+// base
+@import
+"../scss/base/typography",
+"../scss/base/global";
+
+
+// layout
+@import
+"../scss/layout/navigation",
+"../scss/layout/main",
+"../scss/layout/footer";
 
 	
 // Or selectively include components
