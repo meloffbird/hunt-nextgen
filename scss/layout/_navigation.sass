@@ -1,7 +1,14 @@
 @import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css")
 
 
-// MENU WRAPPER 
+/* CLEAR UL STYLES */
+
+.cn-wrapper
+	ul
+		margin: 0
+
+
+/* MENU WRAPPER */
 
 .csstransforms 
 	.cn-wrapper 
@@ -11,7 +18,7 @@
 		overflow: hidden
 		position: fixed
 		z-index: 10
-		bottom: -13em
+		bottom: -12em
 		left: 50%
 		border-radius: 50%
 		margin-left: -13em
@@ -25,10 +32,11 @@
 
 
 
-// MENU BUTTON
+/*  MENU BUTTON */
 
 .cn-button
 	border: none
+	padding: 0px
 	background: none
 	color: white
 	text-align: center
@@ -51,7 +59,7 @@
 		background-color: #222
 
 
-// MENU BACKGROUND OVERLAY
+/* MENU BACKGROUND OVERLAY */
 
 .cn-overlay
 	width: 100%
@@ -72,13 +80,13 @@
 	opacity: 1
 
 
-// MENU LIST ELEMENTS
+/* MENU LIST ELEMENTS */
 
 .csstransforms
 	.cn-wrapper
 		li
 			position: absolute
-			font-size: 1.5em
+			font-size: 1.6em
 			width: 10em
 			height: 10em
 			transform-origin: 100% 100%
@@ -89,22 +97,46 @@
 			margin-left: -10em
 			transition: border .3s ease
 
+
 			&:first-child
-				transform: rotate(30deg) skew(45deg)
+				transform: rotate(0deg) skew(45deg)
 
 			&:nth-child(2)
-				transform: rotate(80deg) skew(45deg)
+				transform: rotate(45deg) skew(45deg)
 
 			&:nth-child(3)
-				transform: rotate(125deg) skew(45deg)
+				transform: rotate(90deg) skew(45deg)
 
 			&:nth-child(4)
-				transform: rotate(170deg) skew(45deg)
+				transform: rotate(135deg) skew(45deg)
 
-			&:not(active) a
+			&:nth-child(odd) a
+				background-color: #a11313
+				background-color: hsla(0, 88%, 63%, 1)
+
+			&:nth-child(even) a
+				background-color: #a61414
+				background-color: hsla(0, 88%, 65%, 1)
+
+			// active style //
+			&.active a
+				background-color: #b31515
+				background-color: hsla(0, 88%, 70%, 1)
+
+
+			// hover style //
+
+			&:not(.active) a
+				&:hover,
+				&:active,
 				&:focus
-					position: fixed
+					background-color: #b31515
+					background-color: hsla(0, 88%, 70%, 1)
 
+
+			&:not(.active) a
+				&:focus
+					position: fixed // fix "displacement" bug in webkit browsers when using tab key
 
 
 			a
@@ -113,8 +145,8 @@
 				height: 14.5em
 				width: 14.53em
 				position: absolute
-				bottom: -7.25em
-				right: -7.25em
+				bottom: -7.20em
+				right: -7.0em
 				border-radius: 50%
 				text-decoration: none
 				color: #fff
