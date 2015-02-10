@@ -26,8 +26,11 @@
 		transition: all .3s ease
 		pointer-events: none
 
+
+.csstransforms 
 	.opened-nav 
 		border-radius: 50%
+		pointer-events: auto
 		transform: scale(1)
 
 
@@ -97,7 +100,7 @@
 			margin-left: -10em
 			transition: border .3s ease
 
-
+			// skew and rotation // 
 			&:first-child
 				transform: rotate(0deg) skew(45deg)
 
