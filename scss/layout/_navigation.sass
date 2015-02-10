@@ -1,16 +1,137 @@
-.navigation
-	ul
-		display: inline-block 
-		margin-left: 0
-		+overflow
+@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css")
 
+
+// MENU WRAPPER 
+
+.csstransforms 
+	.cn-wrapper 
+		font-size: 1em
+		width: 26em
+		height: 26em
+		overflow: hidden
+		position: fixed
+		z-index: 10
+		bottom: -13em
+		left: 50%
+		border-radius: 50%
+		margin-left: -13em
+		transform: scale(0.1)
+		transition: all .3s ease
+		pointer-events: none
+
+	.opened-nav 
+		border-radius: 50%
+		transform: scale(1)
+
+
+
+// MENU BUTTON
+
+.cn-button
+	border: none
+	background: none
+	color: white
+	text-align: center
+	font-size: 1.5em
+	height: 3.5em
+	width: 3.5em
+	background-color: #111
+	position: fixed
+	left: 50%
+	margin-left: -1.75em
+	bottom: -1.75em
+	border-radius: 50%
+	cursor: pointer 
+	z-index: 11
+
+.cn-button
+	&:hover,
+	&:active,
+	&:focus
+		background-color: #222
+
+
+// MENU BACKGROUND OVERLAY
+
+.cn-overlay
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.6)
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	opacity: 0
+	transition: all .3s ease
+	z-index: 2
+	pointer-events: none
+
+.cn-overlay.on-overlay
+	visibility: visible
+	opacity: 1
+
+
+// MENU LIST ELEMENTS
+
+.csstransforms
+	.cn-wrapper
 		li
-			float: left
-			display: inline-block
-			width: 150px
-			background: tomato
-			color: white
-			margin: 10px
-			padding: 10px
-			text-align: center
+			position: absolute
+			font-size: 1.5em
+			width: 10em
+			height: 10em
+			transform-origin: 100% 100%
+			overflow: hidden
+			left: 50%
+			top: 50%
+			margin-top: -1.3em
+			margin-left: -10em
+			transition: border .3s ease
+
+			&:first-child
+				transform: rotate(30deg) skew(45deg)
+
+			&:nth-child(2)
+				transform: rotate(80deg) skew(45deg)
+
+			&:nth-child(3)
+				transform: rotate(125deg) skew(45deg)
+
+			&:nth-child(4)
+				transform: rotate(170deg) skew(45deg)
+
+			&:not(active) a
+				&:focus
+					position: fixed
+
+
+
+			a
+				display: block
+				font-size: 1.18em
+				height: 14.5em
+				width: 14.53em
+				position: absolute
+				bottom: -7.25em
+				right: -7.25em
+				border-radius: 50%
+				text-decoration: none
+				color: #fff
+				padding-top: 1.8em
+				text-align: center
+				transform: skew(-45deg) rotate(-67.5deg) scale(1)
+				transition: opacity 0.3s, color 0.3s
+
+				span
+					font-size: 1.1em
+					opacity: 0.7
+
+
+
+
+
+
+
+
 
