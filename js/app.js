@@ -5,7 +5,7 @@ $(document).foundation();
 
 
 
-// MENU NAVIGATION 
+// MENU NAVIGATION
 (function(){
 
 	var button = document.getElementById('cn-button'),
@@ -47,4 +47,6 @@ $(document).foundation();
 	document.addEventListener('click', closeNav);
 
 })();
+
+
 
