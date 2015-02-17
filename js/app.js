@@ -3,18 +3,15 @@
 $(document).foundation();
 
 
-
-
 // MENU NAVIGATION
 (function(){
 
-	var button = document.getElementById('cn-button'),
-    wrapper = document.getElementById('cn-wrapper'),
-    overlay = document.getElementById('cn-overlay');
+	var button = document.getElementbyId('cn-button'),
+    wrapper = document.getElementById('cn-wrapper');
 
 	//open and close menu when the button is clicked
 	var open = false;
-	button.addEventListener('click', handler, false);
+	toggle.addEventListener('click', handler, false);
 	wrapper.addEventListener('click', cnhandle, false);
 
 	function cnhandle(e){
@@ -34,14 +31,12 @@ $(document).foundation();
 	}
 	function openNav(){
 		open = true;
-	    button.innerHTML = "-";
-	    classie.add(overlay, 'on-overlay');
+		button.innerHTML = "-";
 	    classie.add(wrapper, 'opened-nav');
 	}
 	function closeNav(){
 		open = false;
 		button.innerHTML = "+";
-		classie.remove(overlay, 'on-overlay');
 		classie.remove(wrapper, 'opened-nav');
 	}
 	document.addEventListener('click', closeNav);
