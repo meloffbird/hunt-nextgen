@@ -1,0 +1,13 @@
+// COLORS
+
+$theme-blue: #0083CA;
+$theme-purple: #602D91;
+$theme-pink: #EC008C;
+
+
+@mixin grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
