@@ -1,13 +1,27 @@
-/* Layout */
+// Icon Fonts
+@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
+
+// Font Face
+@include fontFace ('StiffStaff','../fonts/StiffStaff-webfont');
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,400italic,500,700,100);
+
+$oswald: 'Oswald', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+
+// Layout
 body {
 	font-size: 14px;
+    font-family: $roboto;
 }
 
 
-/* Headings */
+// Headings
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
-	font-family: "Helvetica Neue";
+	font-family: $roboto;
 }
 
 a {
@@ -15,10 +29,22 @@ a {
 }
 
 h1 {
-	font-size: 40px;
+    font-family: "StiffStaff";
+    color: white;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+h3 {
+    font-family: $oswald;
+    font-size: 30px;
+    margin: 0px;
+    letter-spacing: .05em;
 }
 
 
 
-@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
+
+
+
 
