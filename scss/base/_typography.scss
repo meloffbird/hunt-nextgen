@@ -5,7 +5,7 @@
 @include fontFace ('StiffStaff','../fonts/StiffStaff-webfont');
 
 // Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,400italic,500,700,100);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,400italic,500,700,100);
 
 $oswald: 'Oswald', sans-serif;
 $roboto: 'Roboto', sans-serif;
@@ -15,6 +15,13 @@ $roboto: 'Roboto', sans-serif;
 body {
 	font-size: 14px;
     font-family: $roboto;
+}
+
+p {
+    font-familY: $roboto;
+    font-size: 12px;
+    line-height: 14px;
+
 }
 
 
@@ -40,6 +47,16 @@ h3 {
     font-size: 30px;
     margin: 0px;
     letter-spacing: .05em;
+}
+
+h4 {
+    font-family: $oswald;
+    font-size: 22px;
+}
+
+h6 {
+    font-family: $oswald;
+    font-size: 14px;
 }
 
 

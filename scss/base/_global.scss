@@ -9,3 +9,50 @@
 
 textarea, input, button { outline: none; }
 
+//colors
+
+.f-color {
+    color: $theme-blue
+}
+
+.f-bg {
+    background: $theme-blue
+}
+
+.c-color {
+    color: $theme-purple
+}
+
+.c-bg {
+    background: $theme-purple
+}
+
+.p-color {
+    color: $theme-pink
+}
+
+.p-bg {
+    background: $theme-pink
+}
+
+
+
+// button styles
+.btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: .03em;
+  padding: 12px 30px 12px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.spacer {
+    display: block;
+    height: 30px;
+}
+

@@ -5,10 +5,6 @@
     max-height: 500px
     overflow: hidden
 
-    img
-        width: 100%
-        height: auto
-
     h3, h1
         color: white
 
@@ -29,7 +25,9 @@
             font-size: 16px
 
         .title
-            padding-top: 60px
+            padding-top: 100px
+
+
 
 @media #{$medium-only}
 
@@ -43,6 +41,37 @@
             font-size: 21px
 
 
+// logo
+.logo
+    position: absolute
+    z-index: 10
+    padding-top: 20px
+    opacity: .5
+
+    img
+        width: 161px
+        height: auto
+        float: left
+
+    h6
+        display: inline-block
+        float: left
+        color: white
+        padding-left: 5px
+        padding-top: 5px
+        letter-spacing: .03em
+        font-weight: 300
+
+@media #{$small-only}
+
+    .logo
+
+        img
+            width: 120px
+
+        h6
+            padding-top: 3px
+            font-size: 10px
 
 
 
