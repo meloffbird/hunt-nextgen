@@ -73,11 +73,14 @@
             padding-top: 3px
             font-size: 10px
 
+.subpage-header
+    .logo img
+        width: 70px
 
 
 
 
-// subpage headers
+// SUBPAGE HEADERS
 
 .overlay
     width: 100%
@@ -112,6 +115,29 @@
         background-image: url(../images/f_student-at-computer.jpg)
         .overlay
             background: $theme-blue
+
+
+//title
+.subpage-header
+    .title
+        z-index: 2
+        position: absolute
+        padding-top: 120px
+
+@media #{$small-only}
+
+    .subpage-header
+        .title
+            padding-top: 40px
+
+        h1
+            font-size: 50px
+
+        .logo img
+            width: 40px
+
+
+
 
 
 
