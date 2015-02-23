@@ -1,0 +1,75 @@
+// .tomato
+//     background: tomato
+//     height: 200px
+//     border: 1px solid white
+
+// .teal
+//     background: teal
+//     height: 400px
+//     border: 1px solid white
+
+// .wheat
+//     background: wheat
+//     height: 200px
+//     border: 1px solid white
+
+
+.info-block
+    border-bottom: 4px solid $theme-blue
+    margin-bottom: 40px
+
+    p
+        line-height: 18px
+
+    h3
+        font-weight: 300
+        margin-top: 40px
+
+
+// CHAIRS
+.chairs
+    .small-6:nth-child(2)
+        margin-bottom: 79px
+
+@media #{$small-only}
+    .chairs .small-6:nth-child(2)
+        margin-bottom: 31px
+
+@media #{$medium-only}
+    .chairs .small-6:nth-child(2)
+        margin-bottom: 59px
+
+
+
+
+// TECHNOLOGY
+
+.tech
+    .labels
+        width: 300px
+        height: 40px
+        background: $theme-blue
+        position: absolute
+        top: 30%
+        z-index: 100
+        padding: 5px
+        color: white
+
+
+@media #{$small-only}
+    .tech
+        .labels
+            height: 20px
+            width: 50%
+            padding-top: 0px
+
+            h5
+                font-size: 12px
+
+            span
+                visibility: hidden
+
+
+
+
+

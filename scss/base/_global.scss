@@ -10,7 +10,6 @@
 textarea, input, button { outline: none; }
 
 //colors
-
 .f-color {
     color: $theme-blue
 }
@@ -36,7 +35,6 @@ textarea, input, button { outline: none; }
 }
 
 
-
 // button styles
 .btn {
   -webkit-border-radius: 5px;
@@ -48,11 +46,41 @@ textarea, input, button { outline: none; }
   padding: 12px 30px 12px 30px;
   text-decoration: none;
   display: inline-block;
+
+  &.outline {
+    border: 1px solid #000;
+    color: #000;
+
+  }
 }
 
 
+//spacers
 .spacer {
     display: block;
     height: 30px;
 }
 
+.divider {
+  display: block;
+  height: 50px;
+  background: #E7E7E7;
+}
+
+.divider-large {
+  @extend .divider;
+  margin-top: 40px;
+  height: 100px;
+
+}
+
+.bump40 {
+  margin-top:  40px;
+}
+
+
+
+//gray background
+.grayrow {
+    background: #F8F8F8;
+}

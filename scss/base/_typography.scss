@@ -43,20 +43,35 @@ h1 {
 }
 
 h3 {
-    font-family: $oswald;
+    font-family: $roboto;
     font-size: 30px;
     margin: 0px;
     letter-spacing: .05em;
 }
 
 h4 {
-    font-family: $oswald;
     font-size: 22px;
+    font-family: $oswald;
+    letter-spacing: .05em;
 }
+
+h5 {
+    color: inherit;
+}
+
 
 h6 {
     font-family: $oswald;
     font-size: 14px;
+}
+
+
+ul {
+    font-size: 12px;
+
+    li {
+        list-style-type: initial;
+    }
 }
 
 
