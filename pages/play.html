@@ -9,31 +9,89 @@
   </head>
   <body>
 
+    <main>
 
-    <!-- HEADER -->
-    <div class="subpage-header play">
-      <div class="overlay"></div>
-      <div class="title small-10 columns">
-        <h1> PLAY </h1>
+      <!-- HEADER -->
+      <div class="cd-header subpage-header play">
+
+        <div class="overlay"></div>
+
+        <div class="row">
+
+          <!--toogle button-->
+          <a href="#0" class="cd-3d-nav-trigger">Menu<span></span></a>
+
+
+          <div class="title small-10 columns">
+            <h1> play </h1>
+          </div>
+
+        </div>
+
       </div>
-    </div>
 
-    <!-- MENU -->
-    <div class="menu">
+      <section class="play">
 
-      <button class="cn-button" id="cn-button">+</button>
-      <div class="cn-wrapper" id="cn-wrapper">
-        <ul>
-          <li><a href="../index.html"><span class="icon-home"></span></a></li>
-          <li><a href="play.html"><span class="icon-book"></span></a></li>
-          <li><a href="collaborate.html"><span class="icon-pencil"></span></a></li>
-          <li><a href="focus.html"><span class="icon-cog"></span></a></li>
+          <div class="divider"></div>
+
+
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+
+          <!--INFO BLOCK ONE | GROUP STUDY-->
+              <div class="info-block">
+                <h3> GAME LAB </h3>
+                <p> Throughout the perimter of the commons there are 18 group study rooms that
+                  can accomodate 4-5 people. They are equipped with large moniters that students can
+                  connect to via HDMI, which is useful when working on group presentations.
+                </p>
+              </div>
+
+              <a class="btn outline"> RESERVE THE GAME ROOM </a>
+
+            </div>
+          </div>
+
+
+        </section>
+
+        <!-- FOOTER -->
+          <div class="footer">
+              <div class="row">
+                <div class="inner-footer small-12 columns">
+                  <p> Made with &hearts; in Raleigh, NC </p>
+                </div>
+              </div>
+          </div>
+
+    </main>
+
+
+      <nav class="cd-3d-nav-container">
+        <ul class="cd-3d-nav">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="focus.html"> Focus </a>
+          </li>
+
+          <li>
+            <a href="collaborate.html"> Collaborate </a>
+          </li>
+
+          <li class="cd-selected">
+            <a href="play.html"> Play </a>
+          </li>
+
+          <!-- other list items here -->
         </ul>
-      </div>
 
-      <div id="cn-overlay" class="cn-overlay"></div>
+        <span class="cd-marker color-1"></span> <!-- marker for the selected navigation item -->
+      </nav>
 
-    </div>
+
 
 
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>

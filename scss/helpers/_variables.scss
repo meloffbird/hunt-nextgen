@@ -1,0 +1,34 @@
+
+// theme colors
+
+$theme-blue: #0083CA;
+$theme-purple: #602D91;
+$theme-pink: #EC008C;
+
+
+// colors
+
+$body-bg: #fff;
+$nav-container-bg: #fff;
+$nav-bg: darken($body-bg, 10%);
+$text-color: #1A1A1A;
+
+$color-1: #1A1A1A; // gray
+$color-2: #0083CA; // blue
+$color-3: #602D91; // purple
+$color-4: #EC008C; // pink
+
+
+// fonts
+
+$primary-font: 'Roboto', sans-serif;
+
+// navigation
+
+$nav-height-S: 80px;
+$nav-height-M: 170px;
+$nav-items: 4;
+
+// animation
+
+$animation-duration: 0.5s;

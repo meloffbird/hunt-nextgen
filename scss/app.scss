@@ -7,7 +7,8 @@
 "../scss/helpers/mixins",
 "../scss/helpers/variables";
 
-// vendor
+// libraries
+@import 'bourbon/bourbon';
 
 
 // base
@@ -29,7 +30,6 @@
 "../scss/pages/homepage",
 "../scss/pages/focus",
 "../scss/pages/collab";
-
 
 
 // Or selectively include components
