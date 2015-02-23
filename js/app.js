@@ -51,15 +51,15 @@ $(".focusoverlay").hide();
 $(".collaboverlay").hide();
 $(".playoverlay").hide();
 
-$(".f-map").click(function(){
+$(".f-map").hover(function(){
     $(".focusoverlay").toggle();
 });
 
-$(".c-map").click(function(){
+$(".c-map").hover(function(){
     $(".collaboverlay").toggle();
 });
 
-$(".p-map").click(function(){
+$(".p-map").hover(function(){
     $(".playoverlay").toggle();
 });
 
