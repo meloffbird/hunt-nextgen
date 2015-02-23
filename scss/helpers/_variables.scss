@@ -4,6 +4,33 @@
 $theme-blue: #0083CA;
 $theme-purple: #602D91;
 $theme-pink: #EC008C;
+$theme-black: #1A1A1A;
+
+//colors
+.f-color {
+    color: $theme-blue
+}
+
+.f-bg {
+    background: $theme-blue
+}
+
+.c-color {
+    color: $theme-purple
+}
+
+.c-bg {
+    background: $theme-purple
+}
+
+.p-color {
+    color: $theme-pink
+}
+
+.p-bg {
+    background: $theme-pink
+}
+
 
 
 // colors

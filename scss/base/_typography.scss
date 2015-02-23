@@ -1,8 +1,8 @@
-// Icon Fonts
-@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
 
 // Font Face
 @include fontFace ('StiffStaff','../fonts/StiffStaff-webfont');
+@include fontFace ('FontAwesome','../fonts/fontawesome-webfont');
+
 
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,400italic,500,700,100);
@@ -61,7 +61,7 @@ h5 {
 
 
 h6 {
-    font-family: $oswald;
+    font-family: $roboto;
     font-size: 14px;
 }
 
@@ -70,6 +70,15 @@ ul {
 }
 
 
-
+// block quote
+blockquote   {
+    border-left: none;
+}
+blockquote p {
+  line-height: 1.6;
+  color: inherit;
+  font-size: 16px;
+  font-style: italic;
+}
 
 

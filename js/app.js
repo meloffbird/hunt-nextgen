@@ -11,20 +11,43 @@ $(".playoverlay").hide();
 
 $(".f-map").hover(function(){
     $(".focusoverlay").toggle();
+
+        var el = document.getElementById("f-map");
+        if (classie.has(el,"fa-2x")) {
+            classie.remove(el,"fa-2x");
+        } else {
+            classie.add(el,"fa-2x");
+        }
 });
 
 $(".c-map").hover(function(){
     $(".collaboverlay").toggle();
+
+    var el = document.getElementById("c-map");
+    if (classie.has(el,"fa-2x")) {
+        classie.remove(el,"fa-2x");
+    } else {
+        classie.add(el,"fa-2x");
+    }
+
 });
 
 $(".p-map").hover(function(){
     $(".playoverlay").toggle();
+
+    var el = document.getElementById("p-map");
+    if (classie.has(el,"fa-2x")) {
+        classie.remove(el,"fa-2x");
+    } else {
+        classie.add(el,"fa-2x");
+    }
+
 });
+
 
 
 // MENU NAVIGATION
 
-jQuery(document).ready(function($){
     //toggle 3d navigation
     $('.cd-3d-nav-trigger').on('click', function(){
         toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
@@ -48,7 +71,7 @@ jQuery(document).ready(function($){
         $('.cd-3d-nav-container').toggleClass('nav-is-visible', addOrRemove);
     }
 
-    //this function update the .cd-marker position
+    //this function updates the .cd-marker position
     function updateSelectedNav(type) {
         var selectedItem = $('.cd-selected'),
             selectedItemPosition = selectedItem.index() + 1,
@@ -74,12 +97,36 @@ jQuery(document).ready(function($){
         });
         return this;
     };
-});
+
+
+
+
+// $(function() {
+//     $(".coconut")
+//         .mouseover(function() {
+//             var src = $(this).attr("src").match(/[^\.]+/) + "../images/chair_coconut.jpg";
+//             $(this).attr("src", src);
+//             alert ("hey hot stuff");
+//         })
+//         .mouseout(function() {
+//             var src = $(this).attr("src").replace("over.gif", "../images/chair_scissor.jpg");
+//             $(this).attr("src", src);
+//         });
+// });
 
 
 
 
 
 
+$(function() {
+    $("#ball").hover(function() {
+        $("#c_group-single").attr("src", "../images/chair_coconut.jpg");
+        $("#wtf").attr("src", "../images/chair_coconut.jpg");
 
+    }, function() {
+        $("#c_group-single").attr("src", "../images/f_student-group-study.jpg");
+        $("#wtf").attr("src", "../images/f_student-group-study.jpg");
+    });
 
+})
