@@ -9,7 +9,7 @@ $(".focusoverlay").hide();
 $(".collaboverlay").hide();
 $(".playoverlay").hide();
 
-$(".f-map").hover(function(){
+$(".f-map").click(function(){
     $(".focusoverlay").toggle();
 
         var el = document.getElementById("f-map");
@@ -18,9 +18,14 @@ $(".f-map").hover(function(){
         } else {
             classie.add(el,"fa-2x");
         }
+
+    $('html,body').animate({
+        scrollTop: $(".floorplan").offset().top},
+        'slow');
 });
 
-$(".c-map").hover(function(){
+
+$(".c-map").click(function(){
     $(".collaboverlay").toggle();
 
     var el = document.getElementById("c-map");
@@ -30,9 +35,13 @@ $(".c-map").hover(function(){
         classie.add(el,"fa-2x");
     }
 
+    $('html,body').animate({
+        scrollTop: $(".floorplan").offset().top},
+        'slow');
+
 });
 
-$(".p-map").hover(function(){
+$(".p-map").click(function(){
     $(".playoverlay").toggle();
 
     var el = document.getElementById("p-map");
@@ -41,6 +50,10 @@ $(".p-map").hover(function(){
     } else {
         classie.add(el,"fa-2x");
     }
+
+    $('html,body').animate({
+        scrollTop: $(".floorplan").offset().top},
+        'slow');
 
 });
 
